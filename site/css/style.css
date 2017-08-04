@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box{
+  background-image: url(../img/banner.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.topo{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.topo span{
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 400;
+}
+
+.topo li {
+  list-style: none;
+}
