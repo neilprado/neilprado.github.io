@@ -18,16 +18,16 @@ body h1 {
 	font-family: 'Lato', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Patua One', cursive;
-	
+
 }
 /* HEADER */
-.topo { 
+.topo {
   	background-image: url(../img/principal.jpg);
   	background-size: cover;
  	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
-	color: #262323; 
+	color: #262323;
 	height:35vh;
 
 }
@@ -62,10 +62,9 @@ h1 {
   	text-align: center;
     padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, .5);
-    height:30hv; 
+    height:30vh;
   }
 
 .menu li {
 	height: 20px;
 }
-
