@@ -1,16 +1,11 @@
 /* font-family: 'Raleway', sans-serif; */
-*{
+ body, h1, ul, li{
   margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  display: grid;
-  grid-template-areas:
-    "topo"
-    "menu"
-    "principal"
-    "footer"
 }
 
 body h1 {
@@ -26,23 +21,23 @@ a {
 }
 /* HEADER */
 .topo {
-  	background-image: url(../img/principal.jpg);
-  	background-size: cover;
- 	  background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-	  color: #262323;
-	  height:35vh;
-    min-width: 300px;
-
+  grid-area: topo;
+  background-image: url(../img/principal.jpg);
+  background-size: cover;
+ 	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+	color: #262323;
+	height:35vh;
+  min-width: 300px;
 }
 
 h1 {
-    display: flex;
-  	justify-content: center;
+  display: flex;
+  justify-content: center;
  	align-items: center;
-  	text-align: center;
-  	height:24vh;
+  text-align: center;
+  height:24vh;
 	font-size:3.3em;
 
 }
@@ -51,13 +46,16 @@ h1 {
 	margin:0;
 	display:flex;
 	justify-content: center;
-	height: 812vh;
 }
 .menu a {
-    padding: 1em;
     color: #262323;
     border-radius: 5px;
 }
+
+.menu a:active a:hover {
+  cursor: pointer;
+}
+
  .menu a:hover {
     background: #4B6977;
 }
@@ -71,4 +69,33 @@ h1 {
 
 .menu li {
 	height: 20px;
+}
+
+.principal {
+  display: grid;
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  background-color: #8d53aa;
+}
+
+.principal .box {
+  background-color: #7b7fb7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .fa {
+  height: 100px;
+  width: 100px;
+  background-color: #7ac9ff;
+  font-size: 3em;
 }
