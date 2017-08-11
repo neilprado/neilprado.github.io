@@ -19,6 +19,8 @@ body h1 {
 
 a {
   text-decoration: none;
+  color: #fff;
+
 }
 /* HEADER */
 .topo {
@@ -41,7 +43,7 @@ h1 {
 
 }
 .menu-principal {
-    background-color: #42A5F5;
+    background-color: #68a8ad;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -55,7 +57,7 @@ h1 {
     border-bottom: 1px solid rgba(255, 255, 255, .5);
   }
   .menu-principal li:hover, .menu-principal li:active {
-    background-color: #90CAF9;
+    background-color: ##6c8672;
     cursor: pointer;
   }
   .menu-principal li a{
@@ -68,11 +70,11 @@ h1 {
   height: 300px;
   width: 100%;
   justify-content: center;
-  background-color: #8d53aa;
+  background-color: #d3d3d3;
 }
 
 .principal .box {
-  background-color: #7b7fb7;
+  background-color: #c4d4af;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -88,7 +90,19 @@ h1 {
 .box .fa {
   height: 100px;
   width: 100px;
-  background-color: #7ac9ff;
+  background-color: #bebebe;
   font-size: 3em;
   border-radius: 50%;
+  color: rgba(241,125,128, 0.9);
+}
+.artigos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.box .icon .fa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
