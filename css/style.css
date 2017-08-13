@@ -18,7 +18,6 @@ li {
 }
 /* HEADER */
 .topo {
-  grid-area: topo;
   background-image: url(../img/principal.jpg);
   background-size: cover;
  	background-attachment: fixed;
@@ -63,10 +62,34 @@ li {
   text-decoration: none;
 }
 
+@media all and (min-width: 700px) {
+  .menu-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media all and (min-width: 1024px) {
+    .menu-principal{
+      justify-content: flex-end;
+    }
+  }
+
+  .menu-principal li {
+    border-bottom: 1px solid rgba(57, 86, 98, 0.1);
+  }
+}
+
 .artigos {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #898E90;
+}
+
+@media all and (min-width: 700px){
+  .artigos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
 }
 
 .principal {
@@ -85,7 +108,7 @@ li {
 }
 
 .principal .box p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 22px;
 }
 
@@ -110,8 +133,9 @@ li {
   align-items: center;
 }
 
-.box .btn-read-more {
+.box p.btn-read-more {
   border: 2px solid #bebebe;
+  font-family: 'Lato', sans-serif;
   padding: 10px;
   background-color: rgba(70, 86, 93, .6);
   border-radius: 5px;
@@ -156,3 +180,9 @@ footer .social .fa {
   cursor: pointer;
   background-color: rgba(155, 167, 172, .7);
 }
+
+@media all and (min-width: 700px) {
+  footer .social {
+    flex-direction: row;
+    justify-content: space-between;
+  }
