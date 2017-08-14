@@ -110,7 +110,7 @@ li {
 
 @media all and (min-width: 1024px){
   .principal .box {
-    padding: 30px;
+    padding: 10px 30px;
   }
 }
 
