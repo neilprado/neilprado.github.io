@@ -92,6 +92,7 @@ li {
   }
 }
 
+
 .principal {
   display: grid;
   width: 100%;
@@ -105,6 +106,12 @@ li {
   flex-direction: column;
   padding: 10px;
   margin: 10px;
+}
+
+@media all and (min-width: 1024px){
+  .principal .box {
+    padding: 30px;
+  }
 }
 
 .principal .box p {
@@ -151,6 +158,11 @@ footer {
   display: grid;
   background-color: #395662;
   justify-content: center;
+  text-align: center;
+}
+
+footer p{
+text-align: center;
 }
 
 footer .social {
