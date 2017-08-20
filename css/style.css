@@ -81,7 +81,7 @@ li {
   }
 }
 
-/* Corpo da Home */
+/* Corpo */
 .artigos {
   display: grid;
   grid-template-columns: 1fr;
@@ -203,11 +203,13 @@ footer .social .fa {
     justify-content: space-between;
   }
 }
-  /* Formulário */
 
+  /* Formulário */
   .formulario{
-    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: #898E90;
+    padding: 10px 0px;
     text-align: center;
   }
 
@@ -218,6 +220,7 @@ footer .social .fa {
 
   .formulario .contact-us{
     background-color: #395662;
+    padding: 5px 10px;
   }
 
   .contact-us {
@@ -233,6 +236,7 @@ footer .social .fa {
   textarea{
     padding: 20px 0px;
     font-size: 20px;
+    height: 250px;
   }
 
   input[type="submit"]{
@@ -243,6 +247,7 @@ footer .social .fa {
     width: 100px;
     border-radius: 5%;
     align-self: center;
+    margin: 10px;
   }
 
   input[type="submit"]:active, input[type="submit"]:hover{
