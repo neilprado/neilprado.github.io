@@ -16,7 +16,7 @@ a {
 li {
   list-style: none;
 }
-/* HEADER */
+/* Cabeçalho */
 .topo {
   background-image: url(../img/principal.jpg);
   background-size: cover;
@@ -35,6 +35,8 @@ li {
   font-size: 32px;
   font-family: 'Raleway', sans-serif;
 }
+
+/* Menu*/
 .menu-principal {
     background-color: #395662;
     margin: 0;
@@ -79,6 +81,7 @@ li {
   }
 }
 
+/* Corpo da Home */
 .artigos {
   display: grid;
   grid-template-columns: 1fr;
@@ -154,6 +157,7 @@ li {
   background-color: #395662;
 }
 
+/* Rodapé*/
 footer {
   display: grid;
   background-color: #395662;
@@ -197,4 +201,51 @@ footer .social .fa {
   footer .social {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+  /* Formulário */
+
+  .formulario{
+    width: 100%;
+    background-color: #898E90;
+    text-align: center;
+  }
+
+  .formulario fieldset{
+    margin: 0;
+    padding: 0;
+  }
+
+  .formulario .contact-us{
+    background-color: #395662;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input{
+    padding: 10px 0px;
+    font-size: 18px;
+  }
+
+  textarea{
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+
+  input[type="submit"]{
+    background-color: rgba(70, 86, 93, .6);
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 800;
+    width: 100px;
+    border-radius: 5%;
+    align-self: center;
+  }
+
+  input[type="submit"]:active, input[type="submit"]:hover{
+    cursor: pointer;
+    background-color:#395662;
   }
