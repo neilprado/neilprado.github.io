@@ -96,15 +96,9 @@ li {
 }
 
 
-.principal {
-  display: grid;
-  width: 100%;
-  justify-content: center;
-}
-
 .principal .box {
   background-color: #9BA7AC;
-  text-align: center;
+  text-align: justify;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -236,7 +230,7 @@ footer .social .fa {
   textarea{
     padding: 20px 0px;
     font-size: 20px;
-    height: 250px;
+    height: 200px;
   }
 
   input[type="submit"]{
