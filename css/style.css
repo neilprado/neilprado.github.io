@@ -155,8 +155,8 @@ li {
 /*Gaussian*/
 
 .gaussian {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   border-radius: 0px 10px;
   background-color: #395662;
   margin: 15px 10px;
@@ -170,20 +170,14 @@ li {
 
 @media all and (min-width: 1024px) {
   .gaussian {
-    flex-direction: row;
+    grid-template-columns: 30% 70%;
   }
 }
 
 @media all and (min-width: 700px) {
   .gaussian img {
-    max-width: 50%;
-  }
-}
-
-@media all and (min-width: 1024px){
-  .gaussian img{
-    width: 800px;
-    height: 200px;
+    max-width: 70%;
+    max-height: 400px;
   }
 }
 
@@ -195,6 +189,11 @@ li {
   font-size: 1.4em;
   text-align: justify;
   margin-left: 10px;
+}
+
+@media all and (min-width: 1024px) {
+  .texto-gaussian p{
+  }
 }
 
 /* Rodapé*/
@@ -294,4 +293,3 @@ footer .social .fa {
     cursor: pointer;
     background-color:#395662;
   }
-
