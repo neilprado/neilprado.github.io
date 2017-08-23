@@ -97,7 +97,7 @@ li {
 
 
 .principal .box {
-  background-color: #9BA7AC;
+  background-color: rgba(57, 86, 98, .7);
   text-align: justify;
   display: flex;
   flex-direction: column;
