@@ -1,7 +1,6 @@
 body, ul, li {
   margin: 0;
   padding: 0;
-  color: black;
 }
 
 body {
@@ -160,10 +159,6 @@ section .intro {
   width: 273px;
 }
 
-.btn-read-more {
-  color: black;
-}
-
 section span .fa{
   font-size: 4.5em;
   display: flex;
@@ -172,82 +167,29 @@ section span .fa{
   transform: rotate(239deg);
 }
 
-.energy {
+.container{
   background-color: #9ac4d6;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 10px;
+  text-align: center;
   background-attachment:fixed;
   background-repeat:no-repeat;
   background-size: cover;
-  background-position: left;
- }
-
-
-section .energy {
-  width: 966px;
-  height: 288px;
 }
 
-section .optimization {
-  width: 966px;
-  height: 288px;
-}
-
-section .frequency{
-  width: 966px;
-  height: 288px;
-}
-
-.resumo_energia p.btn-read-more {
-  border: 2px solid #bebebe;
-  font-family: 'Lato', sans-serif;
-  padding: 10px;
-  background-color: rgba(70, 86, 93, .6);
-  border-radius: 5px;
-  width: 63px;
-  height: 17px;
-}
-
-.optimization{
-   background-color: #9ac4d6;
+.container h2{
   text-align: center;
-  display: flex;
-  margin: 10px;
-  background-attachment:fixed;
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: left;
-  height: 288px;
-  width: 1329px;
 }
 
-.resumo_opt p.btn-read-more {
-  border: 2px solid #bebebe;
-  font-family: 'Lato', sans-serif;
-  padding: 10px;
-  background-color: rgba(70, 86, 93, .6);
-  border-radius: 5px;
-  width: 63px;
-  height: 17px;
+@media all and (min-width: 1024px) {
+  .container{
+    grid-template-columns: 30% 70%;
+    text-align: justify;
+  }
 }
 
-.frequency{
-   background-color: #9ac4d6;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-  background-attachment:fixed;
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: left;
-  height: 288px;
-  width: 1329px;
-}
-
-.resumo_freq p.btn-read-more {
+.btn-read-more {
   border: 2px solid #bebebe;
   font-family: 'Lato', sans-serif;
   padding: 10px;
