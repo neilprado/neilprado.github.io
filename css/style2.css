@@ -1,0 +1,120 @@
+
+
+section .energy {
+  width: 966px;
+  height: 288px;
+}
+
+section .optimization {
+  width: 966px;
+  height: 288px;
+}
+
+section .frequency{
+  width: 966px;
+  height: 288px;
+}
+
+.resumo_energia p.btn-read-more {
+  border: 2px solid #bebebe;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  background-color: rgba(70, 86, 93, .6);
+  border-radius: 5px;
+  width: 63px;
+  height: 17px;
+}
+
+.optimization{
+   background-color: #9ac4d6;
+  text-align: center;
+  display: flex;
+  margin: 10px;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 288px;
+  width: 1329px;
+}
+
+.resumo_opt p.btn-read-more {
+  border: 2px solid #bebebe;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  background-color: rgba(70, 86, 93, .6);
+  border-radius: 5px;
+  width: 63px;
+  height: 17px;
+}
+
+.frequency{
+   background-color: #9ac4d6;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 288px;
+  width: 1329px;
+}
+
+.resumo_freq p.btn-read-more {
+  border: 2px solid #bebebe;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+  background-color: rgba(70, 86, 93, .6);
+  border-radius: 5px;
+  width: 63px;
+  height: 17px;
+}
+
+  /* Rodapé*/
+footer {
+  display: grid;
+  background-color: #395662;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+}
+
+footer .social {
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social .fa {
+  margin: 15px;
+  border: 3px solid #898e90;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  transition: all .6s;
+}
+
+.social .fa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social i:active, .social i:hover{
+  cursor: pointer;
+  background-color: rgba(155, 167, 172, .7);
+}
+
+@media all and (min-width: 700px) {
+  footer .social {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
