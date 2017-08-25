@@ -1,3 +1,188 @@
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #131313;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* Cabeçalho */
+.topo {
+  background-image: url(../img/principal.jpg);
+  background-size: cover;
+ 	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+	color: #262323;
+	height:300px;
+  display: flex;
+  justify-content: center;
+ 	align-items: center;
+  text-align: center;
+}
+
+.topo h1 {
+  font-size: 32px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Menu*/
+.menu-principal {
+    background-color: #395662;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+.menu-principal li {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 1s;
+}
+
+.menu-principal li:hover, .menu-principal li:active {
+  background-color: #9EA7AE;
+  cursor: pointer;
+}
+
+.menu-principal li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+@media all and (min-width: 700px) {
+  .menu-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media all and (min-width: 1024px) {
+    .menu-principal{
+      justify-content: flex-end;
+    }
+  }
+
+  .menu-principal li {
+    border-bottom: 1px solid rgba(57, 86, 98, 0.1);
+  }
+}
+/*Page-Cálculos*/
+
+section h1 {
+  display: flex;
+  font-size: 32px;
+  text-align: center;
+  justify-content: center;
+}
+
+.introducao{
+  font-size: 14px;
+  font-style: italic;
+}
+
+section .intro {
+  background-color: #b6deea;
+  font-size: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  border-radius: 2px 50px;
+}
+
+@media all and (min-width: 1024px) {
+  .intro  {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.geometries {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+@media all and (min-width: 1024px) {
+  .geometries{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.retan {
+  width: 150px;
+  height: 86.34px;
+  background-color:#9e9ed5;
+  margin-bottom:55px;
+  margin-top: 74px;
+  margin-right: 35px;
+  margin-left: 65px;
+}
+
+.retan1 {
+  width: 150px;
+  height: 85.34px;
+  background-color:#9e9ed5;
+  -webkit-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+  }
+
+.retan2 {
+  width: 150px;
+  height: 85.34px;
+  background-color:#9e9ed5;
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+.hexagonos{
+  width: 273px;
+}
+
+.btn-read-more {
+  color: black;
+}
+
+section span .fa{
+  font-size: 4.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(239deg);
+}
+
+.energy {
+  background-color: #9ac4d6;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: left;
+ }
 
 
 section .energy {
