@@ -239,6 +239,9 @@ p{
 #tutorial_3 {
     background-color:  #f4f4f4;
   }
+iframe{
+  width: 100%;
+}
 
   @media all and (min-width: 700px) {
     iframe{
