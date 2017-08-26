@@ -1,15 +1,12 @@
 body, ul, li {
   margin: 0;
   padding: 0;
-  color: black;
 }
 
 
 body{
   color: #7f888f;
   font-family: "Open Sans", sans-serif;
-  font-size: 13pt;
-  font-weight: 400;
 }
 
 a {
@@ -169,53 +166,27 @@ main #bloco .circle-icon .fa {
 .icon {
   text-decoration: none;
   border-bottom: none;
-  height: 96px;
-  width: 96px;
 }
 
-header .info{
-  display: flex;
-}
 
 header li {
   font-size: 1.3em;
 }
 
 
-.info li .fa {
-  height: 100px;
-  width: 100px;
+.info .fa {
   background-color: transparent;
   font-size: 3em;
-  transform: rotate(359deg);
-
-
-}
-
-li.fa {
-  transform: rotate(20deg);
-  color:#5957a2;
 }
 
 .tutor1 h2 {
-  text-align: left;
-  font-size: 1.5em;
   border: solid 5px #539db9;
   border-radius: 12px;
   background-color: gray;
-
 }
 
 #tutorial p{
   text-align: justify;
-}
-
-#tutorial h2 {
-  text-align: left
-  }
-
-#tutorial article {
-  text-align: left;
 }
 
 #tutorial {
@@ -229,35 +200,29 @@ p{
 
 .prog {
   background-image: url(../img/exib1.jpg);
+  background-position: center;
   background-repeat: no-repeat;
-  width:593px;
-  height: 437px;
-  align-items: center;
   border-radius: 12px:
-  border:solid #fff;
 }
 
 .calc {
   background-image: url(../img/metano.jpg);
   background-repeat: no-repeat;
-  width: 318px;
-  height: 306px;
+  background-position: center;
   align-items: center;
 }
 
 .calc_ener {
   background-image: url(../img/imput.jpg);
   background-repeat: no-repeat;
-  width: 499px;
-  height: 195px;
+  background-position: center;
   align-items: center;
 }
 
 .calc_freq {
   background-image: url(../img/imput2.jpg);
   background-repeat: no-repeat;
-  width: 483px;
-  height: 221px;
+  background-position: center;
   align-items: center;
 }
 
@@ -275,6 +240,18 @@ p{
     background-color:  #f4f4f4;
   }
 
+  @media all and (min-width: 700px) {
+    iframe{
+      width: 70%;
+    }
+  }
+
+  @media all and (min-width: 1024px) {
+    iframe{
+      height: 500px;
+    }
+  }
+
 /* Rodapé*/
 footer {
   display: grid;
@@ -285,6 +262,8 @@ footer {
 
 footer p{
   text-align: center;
+  color: #fff;
+  font-size: 1em;
 }
 
 footer .social {
@@ -308,6 +287,7 @@ footer .social .fa {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .social i:active, .social i:hover{
